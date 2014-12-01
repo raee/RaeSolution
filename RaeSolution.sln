@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rae.Web.Cnblogs", "Rae.Web.Cnblogs\Rae.Web.Cnblogs.csproj", "{A6EE47DD-D0F0-4990-A5AF-44F72CFF1389}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rae.Data", "Rae.Data\Rae.Data.csproj", "{FF8C87CD-1550-452A-9C0B-39551009D273}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rae.UnitTest", "Rae.UnitTest\Rae.UnitTest.csproj", "{155C1BB1-5A86-4643-8205-63AE3FD07400}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A6EE47DD-D0F0-4990-A5AF-44F72CFF1389}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6EE47DD-D0F0-4990-A5AF-44F72CFF1389}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6EE47DD-D0F0-4990-A5AF-44F72CFF1389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8C87CD-1550-452A-9C0B-39551009D273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8C87CD-1550-452A-9C0B-39551009D273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8C87CD-1550-452A-9C0B-39551009D273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8C87CD-1550-452A-9C0B-39551009D273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{155C1BB1-5A86-4643-8205-63AE3FD07400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155C1BB1-5A86-4643-8205-63AE3FD07400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155C1BB1-5A86-4643-8205-63AE3FD07400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155C1BB1-5A86-4643-8205-63AE3FD07400}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
