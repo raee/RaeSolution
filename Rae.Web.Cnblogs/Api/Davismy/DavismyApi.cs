@@ -34,13 +34,12 @@ namespace Rae.Web.Cnblogs.Api.Davismy
             string json = mRequest.Get(GetUrl(page.ToString(), categoryId));
             if (json.Equals("{\"data\":\"\";\"op\":\"\"}"))
             {
+                // 解析失败，返回实例。
                 return new List<Model.Blog>();
             }
-            else
-            {
-                return parser.Parse(json);
-            }
 
+            // 解析，并返回博客列表
+            return parser.Parse(json);
         }
 
         public List<Model.Blog> GetBlogsByLastId(string blogId, int page)

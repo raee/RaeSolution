@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/rbKa3S2CkCbeiVqEDbr4gAAAAACAAAAAAAQZgAAAAEAACAAAADZFqaHxpzzJMkDxSmNWxFOW4IS/+Mq7KjdkuGrq+Om4QAAAAAOgAAAAAIAACAAAAAd5KKpwo5VfGVOOf97uXyIxCgjFGY3upff0bMeCW1xqSAAAAAiUGpq5kvAlQuQgDHt6aAJS/xocapkner/HAUQsWfo4UAAAABvU0snbGqTX2rFEfgBJm75txK5NfCwbtLzXKZOPAj5cawbRwOPnbk/vbFs2DaZsGV8jQKP6ef7VfZas75UhMXm</EncryptedPassword>
+    <_PublishTargetUrl>ftp://chenrui.gotoftp5.com/wwwroot/cnblogs/</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/11/2014 21:37:28</publishTime>
+    </File>
+    <File Include="bin/nunit.framework.dll">
+      <publishTime>10/10/2013 17:01:22</publishTime>
+    </File>
+    <File Include="bin/Rae.Web.Cnblogs.dll">
+      <publishTime>11/19/2014 13:21:24</publishTime>
+    </File>
+    <File Include="BlogApi.aspx">
+      <publishTime>11/17/2014 22:58:07</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/19/2014 13:09:13</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

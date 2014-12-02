@@ -35,7 +35,6 @@ namespace Rae.Web.Cnblogs.Api.Cnblogs
                 string xml = mRequest.Get(contenturl + blogId);
                 XmlDocument doc = new XmlDocument();
                 doc.LoadXml(xml);
-                // return doc.SelectSingleNode("/string").InnerText;
                 return doc.DocumentElement.InnerXml;
             }
             catch

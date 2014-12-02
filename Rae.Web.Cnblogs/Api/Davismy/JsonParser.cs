@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using Newtonsoft.Json;
+using Rae.Web.Cnblogs.Api.Cnblogs;
 using Rae.Web.Cnblogs.Model;
 using System.Threading;
 
@@ -29,56 +31,47 @@ namespace Rae.Web.Cnblogs.Api.Davismy
         public string title { get; set; }
     }
 
+    /// <summary>
+    /// 合仔茶网站返回的Json解析。
+    /// </summary>
     public class DavismyJsonParser
     {
-        private ICnblogsApi contentApi = new Cnblogs.CnblogsApi();
+        private ICnblogsApi contentApi;
+        private List<Blog> parseReuslt;
+        private object lockObj = new object();
+
+        public DavismyJsonParser()
+        {
+            contentApi = new CnblogsApi();
+            parseReuslt = new List<Blog>();
+        }
+
 
         public List<Model.Blog> Parse(string json)
         {
-            List<Model.Blog> result = new List<Model.Blog>();
-            try
-            {
-                DavismyJsonModel model = JsonConvert.DeserializeObject<DavismyJsonModel>(json);
+            DavismyJsonModel model = JsonConvert.DeserializeObject<DavismyJsonModel>(json);
 
-                foreach (var item in model.data)
+            foreach (var item in model.data)
+            {
+                Blog m = new Blog()
                 {
-                    Blog m = new Blog()
-                    {
-                        Autor = item.author,
-                        BlogId = item.blog_id,
-                        BlogApp = item.blogapp,
-                        CommentCount = Convert.ToInt32(item.comment),
-                        Summary = item.content,
-                        ViewCount = Convert.ToInt32(item.hit),
-                        SendDate = item.public_time,
-                        Title = item.title,
-                        AutorUrl = string.Empty,
-                        AutorImage = string.Empty,
-                        UpdateDate = string.Empty,
-                        CategoryId = string.Empty
-                    };
-
-                    //// 多线程下载
-                    //Thread thread = new Thread(GetBlogContentThreadMethod);
-                    //thread.Start(m);
-
-                    result.Add(m);
-                }
-
+                    Autor = item.author,
+                    BlogId = item.blog_id,
+                    BlogApp = item.blogapp,
+                    CommentCount = Convert.ToInt32(item.comment),
+                    Summary = item.content,
+                    ViewCount = Convert.ToInt32(item.hit),
+                    SendDate = item.public_time,
+                    Title = item.title,
+                    AutorUrl = string.Empty,
+                    AutorImage = string.Empty,
+                    UpdateDate = string.Empty,
+                    CategoryId = string.Empty
+                };
+                parseReuslt.Add(m);
             }
-            catch
-            {
-            }
-
-            return result;
+            return parseReuslt;
         }
 
-        public void GetBlogContentThreadMethod(object m)
-        {
-            Blog model = (Blog)m;
-            model.Content = contentApi.GetBlogContent(model.BlogId);
-
-            Console.WriteLine(model.Content);
-        }
     }
 }

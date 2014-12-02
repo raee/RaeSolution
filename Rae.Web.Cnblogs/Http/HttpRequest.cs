@@ -17,6 +17,7 @@ namespace Rae.Web.Cnblogs.Http
                 Console.WriteLine("URl:" + url);
                 HttpWebRequest request = (HttpWebRequest)HttpWebRequest.CreateDefault(new Uri(url));
                 request.Timeout = 3000;
+             //   request.Proxy = new WebProxy("221.223.84.79", 9000); // 代理
                 Stream stream = request.GetResponse().GetResponseStream();
                 StreamReader reader = new StreamReader(stream);
                 string result = reader.ReadToEnd();
@@ -26,10 +27,10 @@ namespace Rae.Web.Cnblogs.Http
 
                 return result;
             }
-            catch
+            catch (Exception ex)
             {
-
-                return string.Empty;
+                //throw ex;
+                return "Http请求错误，访问不到：" + url;
             }
 
         }
