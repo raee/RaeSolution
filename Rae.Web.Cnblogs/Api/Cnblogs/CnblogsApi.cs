@@ -14,17 +14,19 @@ namespace Rae.Web.Cnblogs.Api.Cnblogs
 
         public List<Model.BlogCategory> GetCategory()
         {
+            // 获取本地数据库的分类
+
             throw new NotImplementedException();
         }
 
         public List<Model.Blog> GetBlogs(string categoryId, int page)
         {
-            return null;
+            throw new NotImplementedException("该方法用盒仔茶的！");
         }
 
         public List<Model.Blog> GetBlogsByLastId(string blogId, int page)
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException("该方法用盒仔茶的！");
         }
 
 
