@@ -30,6 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>LIb\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.core">
       <HintPath>..\packages\NUnitTestAdapter.1.2\lib\nunit.core.dll</HintPath>
       <Private>False</Private>
@@ -49,6 +57,14 @@
       <HintPath>..\packages\NUnitTestAdapter.1.2\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Spring.Aop, Version=1.3.1.20711, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>LIb\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.3.1.20711, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>LIb\Spring.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,19 +74,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DapperTest.cs" />
+    <Compile Include="Auth\TestAuth.cs" />
+    <Compile Include="Auth\VerifyInfoTest.cs" />
+    <Compile Include="Method\Person.cs" />
+    <Compile Include="Method\SpringNet\MethodAdvice.cs" />
+    <Compile Include="Method\TestPerson.cs" />
     <Compile Include="TestBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Rae.Data\Rae.Data.csproj">
-      <Project>{ff8c87cd-1550-452a-9c0b-39551009d273}</Project>
-      <Name>Rae.Data</Name>
+    <ProjectReference Include="..\Pacs.Auth.DataProvider\Pacs.Auth.DataProvider.csproj">
+      <Project>{1cb5f5dd-d691-4936-8d2b-7daafb5555b1}</Project>
+      <Name>Pacs.Auth.DataProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rae.Module.Auth\Rae.Module.Auth.csproj">
+      <Project>{f487529d-d716-4d1d-a3b4-2b690fdd0d05}</Project>
+      <Name>Rae.Module.Auth</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="LIb\Common.Logging.dll" />
+    <Content Include="LIb\Spring.Aop.dll" />
+    <Content Include="LIb\Spring.Core.dll" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

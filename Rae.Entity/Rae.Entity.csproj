@@ -42,10 +42,10 @@
     <Compile Include="App\AppInfo.cs" />
     <Compile Include="App\AppType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserCenter\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Log\" />
-    <Folder Include="UserCenter\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

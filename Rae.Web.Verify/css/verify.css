@@ -1,0 +1,256 @@
+﻿.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.container-top-margin {
+    margin-top: 45px;
+}
+
+.h2-title {
+    border-bottom: 1px #ececec solid;
+    padding-bottom: 5px;
+}
+
+#editView {
+    min-height: 360px;
+    border: 1px #000000 dotted;
+}
+
+    #editView table th {
+        width: 150px;
+        text-align: right;
+        color: #666;
+        vertical-align: middle;
+    }
+
+        #editView table th span {
+            color: red;
+            font-weight: bold;
+            padding-right: 5px;
+        }
+
+    #editView table td {
+        width: 240px;
+        vertical-align: middle;
+    }
+
+
+.tips {
+    color: #777777;
+    font-size: 9px;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.text-line {
+    display: inline-block;
+}
+
+.ddl {
+    display: none;
+}
+
+.apply-textbox {
+    width: 264px;
+    border: 1px solid #ccc;
+    margin-top: -3px;
+    color: #666666;
+    padding: 5px;
+}
+
+
+
+.W_main_cont .cut_line_cz_2 {
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 20px;
+}
+
+.W_main_cont .txt_alerWap {
+    margin: 10px 0 15px;
+    color: #f60;
+    font-size: 14px;
+}
+
+.W_main_cont .tit_vcert {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 16px;
+}
+
+ul.v_certUls {
+    width: 100%;
+}
+
+    ul.v_certUls li {
+        float: left;
+        display: block;
+        width: 340px;
+        padding: 0 10px 0 15px;
+        min-height: 150px;
+        _height: 150px;
+    }
+
+li {
+    list-style: none;
+}
+
+ul.v_certUls li .imgWp_vcert {
+    padding: 3px;
+    float: left;
+    display: block;
+    width: 122px;
+    height: 122px;
+    margin-right: 5px;
+}
+
+ul.v_certUls li .inf_vcert {
+    padding-left: 140px;
+    line-height: 18px;
+}
+
+    ul.v_certUls li .inf_vcert p.tit_name {
+        font-size: 14px;
+        color: #333;
+    }
+
+    ul.v_certUls li .inf_vcert p {
+        margin-bottom: 7px;
+    }
+
+.W_main_cont {
+    color: #666;
+    position: relative;
+    padding-bottom: 68px;
+    width: 740px;
+    margin: 0 auto;
+}
+
+body, button, input, select, textarea {
+    font: 12px/1.125 Arial,Helvetica,sans-serif;
+    _font-family: "宋体";
+}
+
+.W_main_cont .tit_mgNone {
+    margin: 0;
+}
+
+.W_main_cont .MIB_square_tit_zt {
+    height: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 24px;
+}
+
+.W_main_cont .f14 {
+    font-size: 14px;
+}
+
+.clearfix {
+    display: block;
+}
+
+.verify_pagetit {
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+    .verify_pagetit span {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+.tit_redtxt {
+    color: red;
+}
+
+.W_main_cont .v_apply_list {
+    width: 740px;
+    height: 30px;
+    margin: 0 auto 20px;
+    background: url("../images/v_apply_liststep.png") 0 0 no-repeat;
+}
+
+.W_main_cont .step2 {
+    background-position: 0 -30px;
+}
+
+.W_main_cont .step3 {
+    background-position: 0 -60px;
+}
+
+.W_main_cont .step4 {
+    background-position: 0 -90px;
+}
+
+.W_main_cont .step5 {
+    background-position: 0 -180px;
+}
+
+.W_main_cont .step6 {
+    background-position: 0 -120px;
+}
+
+.W_main_cont .step7 {
+    background-position: 0 -150px;
+}
+
+.W_main_cont .step8 {
+    background-position: 0 -210px;
+}
+
+.W_main_cont .step9 {
+    background-position: 0 -240px;
+}
+
+
+.W_main_cont .v_apply_list li {
+    width: 170px;
+    margin-top: 8px;
+    color: #999;
+    text-align: center;
+    float: left;
+    display: inline;
+    margin-left: -2px;
+}
+
+.W_main_cont .vAppLs_zt li.here {
+    font-weight: bold;
+}
+
+.W_main_cont .v_apply_list li.here {
+    color: #fff;
+}
+
+.W_main_cont .vAppLs_zt li.next {
+    color: #0082cb;
+}
+
+.apply_page_detail .v_apply_info {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+#editView {
+    min-height: auto;
+    border: none;
+}
+
+.apply-view th {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#editView tr, #editView td, #editView th {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn {
+    margin-right: 20px;
+}

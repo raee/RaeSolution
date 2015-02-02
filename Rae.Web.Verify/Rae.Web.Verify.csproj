@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50D5A2E8-28AB-457C-B15A-450AE6A4A524}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rae.Web.Verify</RootNamespace>
+    <AssemblyName>Rae.Web.Verify</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AuthType.aspx" />
+    <Content Include="Admin\Template.aspx" />
+    <Content Include="Admin\VerifyList.aspx" />
+    <Content Include="Admin\ViewInfo.aspx" />
+    <Content Include="Auth\Apply.aspx" />
+    <Content Include="Auth\Step.aspx" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\verify.css" />
+    <Content Include="easyui\jquery-1.8.0.min.js" />
+    <Content Include="easyui\jquery.easyui.min.js" />
+    <Content Include="easyui\themes\default\easyui.css" />
+    <Content Include="easyui\themes\default\images\accordion_arrows.png" />
+    <Content Include="easyui\themes\default\images\blank.gif" />
+    <Content Include="easyui\themes\default\images\calendar_arrows.png" />
+    <Content Include="easyui\themes\default\images\combo_arrow.png" />
+    <Content Include="easyui\themes\default\images\datagrid_icons.png" />
+    <Content Include="easyui\themes\default\images\datebox_arrow.png" />
+    <Content Include="easyui\themes\default\images\layout_arrows.png" />
+    <Content Include="easyui\themes\default\images\linkbutton_bg.png" />
+    <Content Include="easyui\themes\default\images\loading.gif" />
+    <Content Include="easyui\themes\default\images\menu_arrows.png" />
+    <Content Include="easyui\themes\default\images\messager_icons.png" />
+    <Content Include="easyui\themes\default\images\pagination_icons.png" />
+    <Content Include="easyui\themes\default\images\panel_tools.png" />
+    <Content Include="easyui\themes\default\images\searchbox_button.png" />
+    <Content Include="easyui\themes\default\images\slider_handle.png" />
+    <Content Include="easyui\themes\default\images\spinner_arrows.png" />
+    <Content Include="easyui\themes\default\images\tabs_icons.png" />
+    <Content Include="easyui\themes\default\images\tree_icons.png" />
+    <Content Include="easyui\themes\default\images\validatebox_warning.png" />
+    <Content Include="easyui\themes\icon.css" />
+    <Content Include="Global.asax" />
+    <Content Include="images\icon_info.png" />
+    <Content Include="images\icon_success.png" />
+    <Content Include="images\img_vcert3.jpg" />
+    <Content Include="images\img_vp2.png" />
+    <Content Include="images\transparent.gif" />
+    <Content Include="images\v_apply_liststep.png" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\easyui\jquery-1.8.0.min.js" />
+    <Content Include="js\easyui\jquery.easyui.min.js" />
+    <Content Include="js\easyui\themes\default\easyui.css" />
+    <Content Include="js\easyui\themes\default\images\accordion_arrows.png" />
+    <Content Include="js\easyui\themes\default\images\blank.gif" />
+    <Content Include="js\easyui\themes\default\images\calendar_arrows.png" />
+    <Content Include="js\easyui\themes\default\images\combo_arrow.png" />
+    <Content Include="js\easyui\themes\default\images\datagrid_icons.png" />
+    <Content Include="js\easyui\themes\default\images\datebox_arrow.png" />
+    <Content Include="js\easyui\themes\default\images\layout_arrows.png" />
+    <Content Include="js\easyui\themes\default\images\linkbutton_bg.png" />
+    <Content Include="js\easyui\themes\default\images\loading.gif" />
+    <Content Include="js\easyui\themes\default\images\menu_arrows.png" />
+    <Content Include="js\easyui\themes\default\images\messager_icons.png" />
+    <Content Include="js\easyui\themes\default\images\pagination_icons.png" />
+    <Content Include="js\easyui\themes\default\images\panel_tools.png" />
+    <Content Include="js\easyui\themes\default\images\searchbox_button.png" />
+    <Content Include="js\easyui\themes\default\images\slider_handle.png" />
+    <Content Include="js\easyui\themes\default\images\spinner_arrows.png" />
+    <Content Include="js\easyui\themes\default\images\tabs_icons.png" />
+    <Content Include="js\easyui\themes\default\images\tree_icons.png" />
+    <Content Include="js\easyui\themes\default\images\validatebox_warning.png" />
+    <Content Include="js\easyui\themes\icon.css" />
+    <Content Include="js\jquery-1.11.2.min.js" />
+    <Content Include="css\sweet-alert.css" />
+    <Content Include="js\jquery.json.js" />
+    <Content Include="js\sweet-alert.min.js" />
+    <Content Include="js\verify.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pacs.Auth.DataProvider\Pacs.Auth.DataProvider.csproj">
+      <Project>{1cb5f5dd-d691-4936-8d2b-7daafb5555b1}</Project>
+      <Name>Pacs.Auth.DataProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rae.Module.Auth\Rae.Module.Auth.csproj">
+      <Project>{f487529d-d716-4d1d-a3b4-2b690fdd0d05}</Project>
+      <Name>Rae.Module.Auth</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16093</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:16093/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

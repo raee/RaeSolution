@@ -30,10 +30,11 @@ namespace Rae.UnitTest
 
         protected void Show(object msg)
         {
+            Assert.IsNotNull(msg, "msg 对象为空！");
             Console.WriteLine(msg);
         }
 
-        protected void Show(String msg, params object[] args)
+        protected void Show(string msg, params object[] args)
         {
             Console.WriteLine(msg, args);
         }
