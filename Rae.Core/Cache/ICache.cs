@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Rae.Data.Cache
+﻿namespace Rae.Core.Cache
 {
     /// <summary>
     /// 缓存接口

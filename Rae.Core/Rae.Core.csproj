@@ -39,19 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cache\ICache.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App\" />
-    <Folder Include="IDAL\UserCenter\" />
     <Folder Include="Log\" />
     <Folder Include="UserCenter\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Rae.Entity\Rae.Entity.csproj">
-      <Project>{f563ded1-3e5d-42c4-ad46-8c2e85665c61}</Project>
-      <Name>Rae.Entity</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

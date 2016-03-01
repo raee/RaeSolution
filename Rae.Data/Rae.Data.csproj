@@ -11,6 +11,7 @@
     <AssemblyName>Rae.Data</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,16 +31,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\Lib\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cache\ICache.cs" />
+    <Compile Include="Config\Configuration.cs" />
+    <Compile Include="Config\ConfigurationSectionHandler.cs" />
+    <Compile Include="Config\Factory.cs" />
     <Compile Include="Dapper\AssemblyNeutralAttribute.cs" />
     <Compile Include="Dapper\CommandDefinition.cs" />
     <Compile Include="Dapper\CommandFlags.cs" />
@@ -52,8 +57,11 @@
     <Compile Include="Dapper\SimpleMemberMap.cs" />
     <Compile Include="Dapper\SqlMapper.cs" />
     <Compile Include="Dapper\TableValuedParameter.cs" />
-    <Compile Include="DataContext.cs" />
-    <Compile Include="DataTable.cs" />
+    <Compile Include="IQuery.cs" />
+    <Compile Include="Mapping\Column.cs" />
+    <Compile Include="Mapping\IMapping.cs" />
+    <Compile Include="Oracle\OracleConnectionManager.cs" />
+    <Compile Include="Oracle\OracleQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
